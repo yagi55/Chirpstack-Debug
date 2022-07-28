@@ -1,0 +1,103 @@
+pi@raspberrypi:~ $ sudo su
+root@raspberrypi:/home/pi# cd /etc/chirpstack-network-server/
+root@raspberrypi:/etc/chirpstack-network-server# chirpstack-network-server
+INFO[0000] starting ChirpStack Network Server            band=AS_923 docs="https://www.chirpstack.io/" net_id=000000 version=3.16.1
+INFO[0000] storage: setting up storage module
+INFO[0000] storage: setting up Redis client
+INFO[0000] storage: connecting to PostgreSQL
+INFO[0000] storage: applying PostgreSQL data migrations
+INFO[0000] gateway/mqtt: connecting to mqtt broker       server="tcp://localhost:1883"
+INFO[0000] api: starting network-server api server       bind="0.0.0.0:8000" ca-cert=/etc/certs/ca/ca.pem tls-cert=/etc/certs/chirpstack-network-server/api/server/chirpstack-network-server-api-server.pem tls-key=/etc/certs/chirpstack-network-server/api/server/chirpstack-network-server-api-server-key.pem
+INFO[0000] backend/gateway: connected to mqtt server
+INFO[0000] gateway/mqtt: subscribing to gateway event topic  qos=0 topic=gateway/+/event/+
+INFO[0000] starting downlink device-queue scheduler
+INFO[0000] starting multicast scheduler
+INFO[0031] gateway/mqtt: uplink frame received           gateway_id=7276ff000b031874 uplink_id=e26d8596-4c47-4762-9e50-0553c40f92c3
+WARN[0031] uplink received by unknown gateway            ctx_id=5cf98d31-3e1c-4361-aada-16219096c63d gateway_id=7276ff000b031874
+INFO[0041] gateway/mqtt: uplink frame received           gateway_id=7276ff000b031874 uplink_id=629b98a9-2117-4e60-89be-fffbcde918d9
+WARN[0041] uplink received by unknown gateway            ctx_id=8465d07f-b724-4561-aeaa-c2066232a68c gateway_id=7276ff000b031874
+INFO[0051] gateway/mqtt: uplink frame received           gateway_id=7276ff000b031874 uplink_id=c344536f-f531-43d9-b72d-09e30e065579
+WARN[0051] uplink received by unknown gateway            ctx_id=155613d2-7d61-4e59-ae08-c200155fd77b gateway_id=7276ff000b031874
+INFO[0059] gateway/mqtt: gateway stats packet received   gateway_id=7276ff000b031874 stats_id=0b70f302-cd19-4fa1-89d6-d07364cd2aa6
+ERRO[0059] gateway: handle gateway stats error           ctx_id=0b70f302-cd19-4fa1-89d6-d07364cd2aa6 error="update gateway state error: object does not exist"
+INFO[0061] gateway/mqtt: uplink frame received           gateway_id=7276ff000b031874 uplink_id=e35819a6-0ac5-413a-acda-8dbfde88e7a4
+WARN[0061] uplink received by unknown gateway            ctx_id=52f9ae1c-dc20-40cc-9b4a-01fe8f694636 gateway_id=7276ff000b031874
+INFO[0071] gateway/mqtt: uplink frame received           gateway_id=7276ff000b031874 uplink_id=f871cf43-e0e5-47b5-98ef-8a17a75b6696
+WARN[0071] uplink received by unknown gateway            ctx_id=2e136f82-75a1-432f-93d7-26c7cfd10a97 gateway_id=7276ff000b031874
+INFO[0081] gateway/mqtt: uplink frame received           gateway_id=7276ff000b031874 uplink_id=fba572e7-633b-476e-a375-c5becd373b0a
+WARN[0081] uplink received by unknown gateway            ctx_id=cf70a256-7b3b-40dc-968d-a946222fcd41 gateway_id=7276ff000b031874
+INFO[0089] gateway/mqtt: gateway stats packet received   gateway_id=7276ff000b031874 stats_id=5e72da1d-3b5c-4fea-be82-6a745b965e04
+ERRO[0089] gateway: handle gateway stats error           ctx_id=5e72da1d-3b5c-4fea-be82-6a745b965e04 error="update gateway state error: object does not exist"
+INFO[0091] gateway/mqtt: uplink frame received           gateway_id=7276ff000b031874 uplink_id=0114508f-9644-463f-b257-ec01bf308622
+WARN[0091] uplink received by unknown gateway            ctx_id=8c23372d-96dc-4e39-b853-5a0d8d39aa1f gateway_id=7276ff000b031874
+INFO[0101] gateway/mqtt: uplink frame received           gateway_id=7276ff000b031874 uplink_id=d8399b1d-035d-4d5a-a720-ff3a77325634
+WARN[0101] uplink received by unknown gateway            ctx_id=26444c41-e9ae-408f-887b-a68856973fb2 gateway_id=7276ff000b031874
+INFO[0111] gateway/mqtt: uplink frame received           gateway_id=7276ff000b031874 uplink_id=53b403a7-e89a-45c6-900b-a2490228adcb
+WARN[0111] uplink received by unknown gateway            ctx_id=1b04c177-e4d1-4135-aedd-fb519e962a0a gateway_id=7276ff000b031874
+INFO[0119] gateway/mqtt: gateway stats packet received   gateway_id=7276ff000b031874 stats_id=db262642-a007-405b-99f0-dd278be94af4
+ERRO[0119] gateway: handle gateway stats error           ctx_id=db262642-a007-405b-99f0-dd278be94af4 error="update gateway state error: object does not exist"
+INFO[0121] gateway/mqtt: uplink frame received           gateway_id=7276ff000b031874 uplink_id=fbaf4b58-4158-41ac-8520-ef665c570d5c
+WARN[0121] uplink received by unknown gateway            ctx_id=b408978d-6f39-4ee7-acce-42bc57617e0d gateway_id=7276ff000b031874
+INFO[0131] gateway/mqtt: uplink frame received           gateway_id=7276ff000b031874 uplink_id=fa67df25-b9a4-484f-84cf-713938df673c
+WARN[0131] uplink received by unknown gateway            ctx_id=167de157-bba2-4892-94e0-613bd8fb27ee gateway_id=7276ff000b031874
+INFO[0141] gateway/mqtt: uplink frame received           gateway_id=7276ff000b031874 uplink_id=90789f03-9063-447e-883c-c01ae196f09c
+WARN[0142] uplink received by unknown gateway            ctx_id=4527aefb-d788-4c4e-abef-48d6836bfdf1 gateway_id=7276ff000b031874
+INFO[0149] gateway/mqtt: gateway stats packet received   gateway_id=7276ff000b031874 stats_id=0fe988db-6818-4024-8aee-20032301112e
+ERRO[0149] gateway: handle gateway stats error           ctx_id=0fe988db-6818-4024-8aee-20032301112e error="update gateway state error: object does not exist"
+INFO[0151] gateway/mqtt: uplink frame received           gateway_id=7276ff000b031874 uplink_id=8bef40e6-6ad1-402e-9cf7-02bfc61d962e
+WARN[0152] uplink received by unknown gateway            ctx_id=e3ad51be-3d7d-49df-bd25-42447b4aaa13 gateway_id=7276ff000b031874
+INFO[0161] gateway/mqtt: uplink frame received           gateway_id=7276ff000b031874 uplink_id=435781f5-291c-4709-867a-68fb3eb0f05d
+WARN[0162] uplink received by unknown gateway            ctx_id=62ca1a4a-707d-463d-adad-50e6da728a05 gateway_id=7276ff000b031874
+INFO[0171] gateway/mqtt: uplink frame received           gateway_id=7276ff000b031874 uplink_id=4b0a64d7-1fd8-45d1-8bc7-70bafe9f4095
+WARN[0172] uplink received by unknown gateway            ctx_id=722393e5-c726-49ba-a511-221b5c70d4f2 gateway_id=7276ff000b031874
+INFO[0179] gateway/mqtt: gateway stats packet received   gateway_id=7276ff000b031874 stats_id=95e5b62d-2f82-43f0-9e96-8e79ca48eedd
+ERRO[0179] gateway: handle gateway stats error           ctx_id=95e5b62d-2f82-43f0-9e96-8e79ca48eedd error="update gateway state error: object does not exist"
+INFO[0182] gateway/mqtt: uplink frame received           gateway_id=7276ff000b031874 uplink_id=5213bf8e-9abd-4876-b422-90608ebb169b
+WARN[0182] uplink received by unknown gateway            ctx_id=43fb9d88-a5af-4be8-b66a-3e005e3f6695 gateway_id=7276ff000b031874
+INFO[0192] gateway/mqtt: uplink frame received           gateway_id=7276ff000b031874 uplink_id=3b44c43a-9a0e-41cd-82d1-d6b94978f33e
+WARN[0192] uplink received by unknown gateway            ctx_id=50e14bcd-afd9-47a1-a97c-98b340132ad1 gateway_id=7276ff000b031874
+INFO[0202] gateway/mqtt: uplink frame received           gateway_id=7276ff000b031874 uplink_id=ab44124e-ef0f-4e6c-83dc-d5b95fc6ebaa
+WARN[0202] uplink received by unknown gateway            ctx_id=8e716195-29c9-4b74-8406-43ee79569572 gateway_id=7276ff000b031874
+INFO[0209] gateway/mqtt: gateway stats packet received   gateway_id=7276ff000b031874 stats_id=548291a2-e9b0-412e-9b55-0206924c48a4
+ERRO[0209] gateway: handle gateway stats error           ctx_id=548291a2-e9b0-412e-9b55-0206924c48a4 error="update gateway state error: object does not exist"
+INFO[0212] gateway/mqtt: uplink frame received           gateway_id=7276ff000b031874 uplink_id=a22d0612-8fa8-4803-894f-c131741eb232
+WARN[0212] uplink received by unknown gateway            ctx_id=953a8a45-02fe-4191-8c56-0b322fabb6a0 gateway_id=7276ff000b031874
+INFO[0222] gateway/mqtt: uplink frame received           gateway_id=7276ff000b031874 uplink_id=92363c75-902d-4c8d-8280-f33e7b589796
+WARN[0222] uplink received by unknown gateway            ctx_id=8ba6e0f1-eaef-4fcc-bd19-566d89753f7b gateway_id=7276ff000b031874
+INFO[0232] gateway/mqtt: uplink frame received           gateway_id=7276ff000b031874 uplink_id=657a3454-2de5-4dce-a899-7f493d6993a7
+WARN[0232] uplink received by unknown gateway            ctx_id=2c7c0cd9-d61a-43e6-bd86-768ec83808cb gateway_id=7276ff000b031874
+INFO[0239] gateway/mqtt: gateway stats packet received   gateway_id=7276ff000b031874 stats_id=82c075f4-c713-4ec2-ac86-e96a0a71a842
+ERRO[0239] gateway: handle gateway stats error           ctx_id=82c075f4-c713-4ec2-ac86-e96a0a71a842 error="update gateway state error: object does not exist"
+INFO[0242] gateway/mqtt: uplink frame received           gateway_id=7276ff000b031874 uplink_id=786f5d15-931e-44ab-ba9d-17d75857b7a8
+WARN[0242] uplink received by unknown gateway            ctx_id=442fb696-a02e-480c-bdb1-c69a6832b3d0 gateway_id=7276ff000b031874
+INFO[0252] gateway/mqtt: uplink frame received           gateway_id=7276ff000b031874 uplink_id=be4840df-4d6e-4c06-996f-287b8c76adaf
+WARN[0252] uplink received by unknown gateway            ctx_id=f70dc33a-eb26-4d7d-854f-b5520153a62e gateway_id=7276ff000b031874
+INFO[0262] gateway/mqtt: uplink frame received           gateway_id=7276ff000b031874 uplink_id=4a72e2c6-9f27-40a9-8486-55bf2e6b455a
+WARN[0262] uplink received by unknown gateway            ctx_id=3428104d-44c0-42b6-9d96-eacd7c417a75 gateway_id=7276ff000b031874
+INFO[0269] gateway/mqtt: gateway stats packet received   gateway_id=7276ff000b031874 stats_id=76dd24d2-84f2-4ada-bcfb-4fb98818f41e
+ERRO[0269] gateway: handle gateway stats error           ctx_id=76dd24d2-84f2-4ada-bcfb-4fb98818f41e error="update gateway state error: object does not exist"
+INFO[0272] gateway/mqtt: uplink frame received           gateway_id=7276ff000b031874 uplink_id=226ab088-cc7e-4509-9334-094e875eb13a
+WARN[0272] uplink received by unknown gateway            ctx_id=d722fa0c-f8d0-4c0e-a8fe-c48eddc74332 gateway_id=7276ff000b031874
+INFO[0282] gateway/mqtt: uplink frame received           gateway_id=7276ff000b031874 uplink_id=13a9a482-4e46-4578-acc3-f03c8cac7618
+WARN[0282] uplink received by unknown gateway            ctx_id=3f8b1f8f-2404-4417-90fc-1c20d8f4b870 gateway_id=7276ff000b031874
+INFO[0292] gateway/mqtt: uplink frame received           gateway_id=7276ff000b031874 uplink_id=3ab9cd70-3a9a-4df9-98ec-8e5662033658
+WARN[0292] uplink received by unknown gateway            ctx_id=ea683ece-f0de-4a95-bcbd-a53faa85cc26 gateway_id=7276ff000b031874
+INFO[0299] gateway/mqtt: gateway stats packet received   gateway_id=7276ff000b031874 stats_id=e384486e-9df6-417f-bf05-ea5361106b5f
+ERRO[0299] gateway: handle gateway stats error           ctx_id=e384486e-9df6-417f-bf05-ea5361106b5f error="update gateway state error: object does not exist"
+INFO[0302] gateway/mqtt: uplink frame received           gateway_id=7276ff000b031874 uplink_id=d8f9f565-81a5-470d-8671-81118bf04ebe
+WARN[0302] uplink received by unknown gateway            ctx_id=94922b74-319d-41e4-a989-504bea3d0323 gateway_id=7276ff000b031874
+INFO[0312] gateway/mqtt: uplink frame received           gateway_id=7276ff000b031874 uplink_id=a965780b-756c-491d-821b-fc5c0395cf72
+WARN[0312] uplink received by unknown gateway            ctx_id=a79afb96-fa23-4129-b7a0-09b2b47e8d17 gateway_id=7276ff000b031874
+INFO[0322] gateway/mqtt: uplink frame received           gateway_id=7276ff000b031874 uplink_id=ddc716fa-0bcf-427e-bb39-161af08a2b6b
+WARN[0322] uplink received by unknown gateway            ctx_id=453b2e06-e8cb-457f-bcf7-89411522df2c gateway_id=7276ff000b031874
+INFO[0329] gateway/mqtt: gateway stats packet received   gateway_id=7276ff000b031874 stats_id=d495402a-b4d2-47e2-aa87-8a6f3869a7a7
+ERRO[0329] gateway: handle gateway stats error           ctx_id=d495402a-b4d2-47e2-aa87-8a6f3869a7a7 error="update gateway state error: object does not exist"
+INFO[0332] gateway/mqtt: uplink frame received           gateway_id=7276ff000b031874 uplink_id=8aabb2e2-144b-41a3-8276-a85ff75ba087
+WARN[0332] uplink received by unknown gateway            ctx_id=b1515d39-0416-42ed-ac70-b5dd9d966e74 gateway_id=7276ff000b031874
+^CINFO[0333] signal received                               signal=interrupt
+WARN[0333] stopping chirpstack-network-server
+INFO[0333] gateway/mqtt: closing backend
+INFO[0333] gateway/mqtt: unsubscribing from event topic  topic=gateway/+/event/+
+INFO[0333] backend/gateway: handling last messages
+INFO[0333] uplink: waiting for pending actions to complete
+root@raspberrypi:/etc/chirpstack-network-server#

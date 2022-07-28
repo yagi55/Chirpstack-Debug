@@ -1,0 +1,21 @@
+pi@raspberrypi:~ $ sudo su
+root@raspberrypi:/home/pi# cd /etc/chirpstack-application-server/
+root@raspberrypi:/etc/chirpstack-application-server# chirpstack-application-server
+INFO[0000] starting ChirpStack Application Server        docs="https://www.chirpstack.io/" version=3.17.6
+INFO[0000] storage: setting up storage package
+INFO[0000] storage: setup metrics
+INFO[0000] storage: setting up Redis client
+INFO[0000] storage: connecting to PostgreSQL database
+INFO[0000] storage: applying PostgreSQL data migrations
+INFO[0000] integration: configuring global integrations
+INFO[0000] integration/mqtt: TLS config is empty
+INFO[0000] integration/mqtt: connecting to mqtt broker   server="tcp://localhost:1883"
+INFO[0000] integration/mqtt: connected to mqtt broker
+INFO[0000] integration/mqtt: subscribing to tx topic     qos=0 topic=application/+/device/+/command/down
+INFO[0000] api/as: starting application-server api       bind="0.0.0.0:8001" ca_cert=/etc/certs/ca/ca.pem tls_cert=/etc/certs/chirpstack-application-server/api/server/chirpstack-application-server-api-server.pem tls_key=/etc/certs/chirpstack-application-server/api/server/chirpstack-application-server-api-server-key.pem
+INFO[0000] api/external: starting api server             bind="0.0.0.0:8080" tls-cert=/etc/chirpstack-application-server/certs/cert.pem tls-key=/etc/chirpstack-application-server/certs/key.pem
+INFO[0000] api/external: registering rest api handler and documentation endpoint  path=/api
+INFO[0000] api/js: starting join-server api              bind="0.0.0.0:8003" ca_cert= tls_cert= tls_key=
+^CINFO[0325] signal received                               signal=interrupt
+WARN[0325] stopping chirpstack-application-server
+root@raspberrypi:/etc/chirpstack-application-server#
